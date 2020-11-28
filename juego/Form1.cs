@@ -107,7 +107,7 @@ namespace juego
             if (goright)
             {   //asignacion de images dentro de los picturesbox para dar origen a los sprites
                 pictureBox2.Image = Properties.Resources.movimientos_2_png__2_;
-               label2.Text = "Walking to right()";
+                label2.Text = "Walking to right()";
                 pictureBox2.Update();//permite la actualizacion de la imagen simulando la animacion
                 pictureBox2.Image = Properties.Resources.movimientos__1_1;
                 pictureBox2.Update();
@@ -178,7 +178,7 @@ namespace juego
             }
             if (pictureBox2.Bounds.IntersectsWith(pictureBox10.Bounds))
             {
-                pictureBox2.Top = pictureBox2.Top - 5;//movimiento del personaje hacia el lado contrario para evitar traspasar el objeto
+                pictureBox2.Top = pictureBox2.Left - 5;//movimiento del personaje hacia el lado contrario para evitar traspasar el objeto
 
             }
             if (pictureBox2.Bounds.IntersectsWith(pictureBox11.Bounds))
@@ -228,15 +228,7 @@ namespace juego
 
             }
         }
-        //funcion no utilizada
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-        //funcion no utilizada
-        private void pictureBox13_Click(object sender, EventArgs e)
-        {
-
-        }
+        
+        
     }
 }
