@@ -20,3 +20,15 @@ C:\Users\Eduardo\Desktop\juego\obj\Debug\juego.Properties.Resources.resources
 C:\Users\Eduardo\Desktop\juego\obj\Debug\juego.csproj.GenerateResource.cache
 C:\Users\Eduardo\Desktop\juego\obj\Debug\juego.exe
 C:\Users\Eduardo\Desktop\juego\obj\Debug\juego.pdb
+C:\Users\eagle\Desktop\taller_juego\Teoria\juego\bin\Debug\juego.exe.config
+C:\Users\eagle\Desktop\taller_juego\Teoria\juego\bin\Debug\juego.exe
+C:\Users\eagle\Desktop\taller_juego\Teoria\juego\bin\Debug\juego.pdb
+C:\Users\eagle\Desktop\taller_juego\Teoria\juego\obj\Debug\juego.csprojAssemblyReference.cache
+C:\Users\eagle\Desktop\taller_juego\Teoria\juego\obj\Debug\juego.Form1.resources
+C:\Users\eagle\Desktop\taller_juego\Teoria\juego\obj\Debug\juego.Form2.resources
+C:\Users\eagle\Desktop\taller_juego\Teoria\juego\obj\Debug\juego.Form3.resources
+C:\Users\eagle\Desktop\taller_juego\Teoria\juego\obj\Debug\juego.Properties.Resources.resources
+C:\Users\eagle\Desktop\taller_juego\Teoria\juego\obj\Debug\juego.csproj.GenerateResource.cache
+C:\Users\eagle\Desktop\taller_juego\Teoria\juego\obj\Debug\juego.csproj.CoreCompileInputs.cache
+C:\Users\eagle\Desktop\taller_juego\Teoria\juego\obj\Debug\juego.exe
+C:\Users\eagle\Desktop\taller_juego\Teoria\juego\obj\Debug\juego.pdb

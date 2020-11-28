@@ -150,10 +150,12 @@
     <None Include="Resources\game_over_PNG57.png" />
     <None Include="Resources\game.jpg" />
     <None Include="Resources\descarga1.png" />
+    <None Include="Resources\bosque pokemon.jpg" />
     <Content Include="Resources\movimientos-2.png %2810%29.png" />
     <None Include="Resources\movimientos-2.png %2810%291.png" />
     <None Include="Resources\pokemon.jpg" />
     <None Include="Resources\otro_rival.png" />
+    <None Include="Resources\pasto_fondo.jpg" />
     <Content Include="Resources\Pueblo_Primavera_HGSS.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

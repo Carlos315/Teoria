@@ -143,6 +143,16 @@ namespace juego.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bosque_pokemon {
+            get {
+                object obj = ResourceManager.GetObject("bosque pokemon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap charizad_espalda {
             get {
                 object obj = ResourceManager.GetObject("charizad_espalda", resourceCulture);
@@ -446,6 +456,16 @@ namespace juego.Properties {
         internal static System.Drawing.Bitmap otro_rival {
             get {
                 object obj = ResourceManager.GetObject("otro_rival", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pasto_fondo {
+            get {
+                object obj = ResourceManager.GetObject("pasto_fondo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
