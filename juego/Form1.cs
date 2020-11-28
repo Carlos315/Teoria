@@ -228,7 +228,10 @@ namespace juego
 
             }
         }
-        
-        
+
+        private void pictureBox23_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

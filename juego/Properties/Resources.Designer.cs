@@ -213,6 +213,16 @@ namespace juego.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap doble_daño {
+            get {
+                object obj = ResourceManager.GetObject("doble daño", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap electabuzz_espalda {
             get {
                 object obj = ResourceManager.GetObject("electabuzz_espalda", resourceCulture);
@@ -536,6 +546,26 @@ namespace juego.Properties {
         internal static System.Drawing.Bitmap rival {
             get {
                 object obj = ResourceManager.GetObject("rival", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap semilla_del_ermitaño {
+            get {
+                object obj = ResourceManager.GetObject("semilla del ermitaño", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sustitucion {
+            get {
+                object obj = ResourceManager.GetObject("sustitucion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
