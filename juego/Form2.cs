@@ -20,17 +20,20 @@ namespace juego
         string[] mis_ataques = new string[4];//arreglo de caracteres que guarda los ataques del jugador
         string[] ataques_cpu = new string[4];//arreglo de caracteres que guarda los ataques del CPU
         bool turnojugado=false;//variable que indica que el jugador jugo su turno o ataco
-        bool ataque_agua, ataque_elect, ataque_planta, ataque_fuego, ataque_agua_cpu, ataque_elect_cpu, ataque_planta_cpu, ataque_fuego_cpu;
+        bool ataque_agua, ataque_elect, ataque_planta, ataque_fuego, ataque_agua_cpu, ataque_elect_cpu, ataque_planta_cpu, ataque_fuego_cpu, movimiento;
         //variables de tipo que indican el tipo de ataque que fue usado en base a estos se despliega la imagen correspondiente al ataque
         int posicion_mia,posicion_mia2, posicion_cpu, posicion_cpu2;//variables auxiliares para simular el acercamiento de los pokemon al conecta los golpes
         int vida_cpu = 100;//puntos de vida de la CPU
         int vida_jugador = 100;//puntos de vida del jugador
+
+        int meta_arriba = 0, limite_abajo = 0, limite_izquierda = 0, limite_derecha= 0; 
 
         //timer que controla el ataque de la CPU (esta parte fue el conflicto del juego ya que antes de optar por usar otro timer se perdio bastante tiempo tratando de implementar otras soluciones)
         private void timer2_Tick(object sender, EventArgs e)
         {
             Atacar_cpu();//funcion de ataque de la CPU
         }
+
 
         String mi_pokemon;//funcion que indica el pokemon que tiene el jugador
         String pokemon_cpu;//funcion que inidca el pokemon de la CPU
@@ -118,140 +121,148 @@ namespace juego
           
 
             Random rnd = new Random();//uso de la clase random
-          
-            if (ataque_agua && turnojugado)//condiciona que evalua el tipo de atque usado y si el turno es del jugador
+            if (movimiento && turnojugado)
             {
-                if (mis_ataques[0] == "hidrobomba")//se evalua si el ataque del jugador coincide con un elemento del arreglo de ataque 
+                pictureBox1.Left = posicion_mia;
+                pictureBox1.Top = posicion_mia2;
+            }
+            else 
+            {
+                if (ataque_agua && turnojugado)//condiciona que evalua el tipo de atque usado y si el turno es del jugador
                 {
-                    pictureBox2.Image = Properties.Resources.charizard_frente;//impresion del pokemon del CPU
-                    pictureBox2.Update();//actualizacion simulando la animacion
-                    pictureBox2.Image = Properties.Resources.agua;//se usa el sprite correspondiente al ataque y se muestra
-                    pictureBox2.Update();//actualizacion simulando la animacion
-                    pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;//se coloca el pokemon del rival del fondo para hacer simulacion de ser golpeado por el ataque
-                    pictureBox1.Left += 30;//simulacion de acercamiento del pokemon del jugador
-                    pictureBox1.Top -= 30;
+                    if (mis_ataques[0] == "hidrobomba")//se evalua si el ataque del jugador coincide con un elemento del arreglo de ataque 
+                    {
+                        pictureBox2.Image = Properties.Resources.charizard_frente;//impresion del pokemon del CPU
+                        pictureBox2.Update();//actualizacion simulando la animacion
+                        pictureBox2.Image = Properties.Resources.agua;//se usa el sprite correspondiente al ataque y se muestra
+                        pictureBox2.Update();//actualizacion simulando la animacion
+                        pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;//se coloca el pokemon del rival del fondo para hacer simulacion de ser golpeado por el ataque
+                        pictureBox1.Left += 30;//simulacion de acercamiento del pokemon del jugador
+                        pictureBox1.Top -= 30;
 
-                    int reducir = rnd.Next(10, 30);//daño aleatorio segun el ataque 
-                    vida_cpu = vida_cpu - reducir;//reduccion de puntos de vida en base al daño
-                    
-                    // apartir de este parte el codigo tiene un funcionamiento similar en base al tipo de ataque que ejecuto
+                        int reducir = rnd.Next(10, 30);//daño aleatorio segun el ataque 
+                        vida_cpu = vida_cpu - reducir;//reduccion de puntos de vida en base al daño
+
+                        // apartir de este parte el codigo tiene un funcionamiento similar en base al tipo de ataque que ejecuto
+
+                    }
+                    if (mis_ataques[0] == "Burbuja" && turnojugado)
+                    {
+                        pictureBox2.Image = Properties.Resources.charizard_frente;
+                        pictureBox2.Update();
+                        pictureBox2.Image = Properties.Resources.agua_Canon;
+                        pictureBox2.Update();
+                        pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
+                        pictureBox1.Left += 30;
+                        pictureBox1.Top -= 30;
+
+                        int reducir = rnd.Next(10, 20);
+                        vida_cpu = vida_cpu - reducir;
+
+                    }
+                }
+
+                if (ataque_fuego && turnojugado)
+                {
+                    if (mis_ataques[3] == "lanzallamas")
+                    {
+                        pictureBox2.Image = Properties.Resources.charizard_frente;
+                        pictureBox2.Update();
+                        pictureBox2.Image = Properties.Resources.fuego;
+                        pictureBox2.Update();
+                        pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
+                        pictureBox1.Left += 30;
+                        pictureBox1.Top -= 30;
+
+                        int reducir = rnd.Next(10, 20);
+                        vida_cpu = vida_cpu - reducir;
+
+                    }
+                    if (mis_ataques[3] == "fuego")
+                    {
+                        pictureBox2.Image = Properties.Resources.charizard_frente;
+                        pictureBox2.Update();
+                        pictureBox2.Image = Properties.Resources.aro_de_fuego;
+                        pictureBox2.Update();
+                        pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
+                        pictureBox1.Left += 30;
+                        pictureBox1.Top -= 30;
+
+                        int reducir = rnd.Next(10, 30);
+                        vida_cpu = vida_cpu - reducir;
+
+                    }
 
                 }
-                if (mis_ataques[0] == "Burbuja" && turnojugado)
-                {
-                    pictureBox2.Image = Properties.Resources.charizard_frente;
-                    pictureBox2.Update();
-                    pictureBox2.Image = Properties.Resources.agua_Canon;
-                    pictureBox2.Update();
-                    pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
-                    pictureBox1.Left += 30;
-                    pictureBox1.Top -= 30;
 
-                    int reducir = rnd.Next(10, 20);
-                    vida_cpu = vida_cpu - reducir;
+                if (ataque_elect && turnojugado)
+                {
+                    if (mis_ataques[1] == "trueno")
+                    {
+                        pictureBox2.Image = Properties.Resources.charizard_frente;
+                        pictureBox2.Update();
+                        pictureBox2.Image = Properties.Resources.onda_electrica;
+                        pictureBox2.Update();
+                        pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
+                        pictureBox1.Left += 30;
+                        pictureBox1.Top -= 30;
+
+                        int reducir = rnd.Next(10, 20);
+                        vida_cpu = vida_cpu - reducir;
+
+                    }
+                    if (mis_ataques[1] == "rayo")
+                    {
+                        pictureBox2.Image = Properties.Resources.charizard_frente;
+                        pictureBox2.Update();
+                        pictureBox2.Image = Properties.Resources.rayo;
+                        pictureBox2.Update();
+                        pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
+                        pictureBox1.Left += 30;
+                        pictureBox1.Top -= 30;
+
+                        int reducir = rnd.Next(10, 30);
+                        vida_cpu = vida_cpu - reducir;
+
+                    }
+
+
+                }
+                if (ataque_planta)
+                {
+                    if (mis_ataques[2] == "rafaga")
+                    {
+                        pictureBox2.Image = Properties.Resources.charizard_frente;
+                        pictureBox2.Update();
+                        pictureBox2.Image = Properties.Resources.rafaga_planta;
+                        pictureBox2.Update();
+                        pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
+                        pictureBox1.Left += 30;
+                        pictureBox1.Top -= 30;
+
+                        int reducir = rnd.Next(10, 20);
+                        vida_cpu = vida_cpu - reducir;
+
+                    }
+                    if (mis_ataques[2] == "golpe")
+                    {
+                        pictureBox2.Image = Properties.Resources.charizard_frente;
+                        pictureBox2.Update();
+                        pictureBox2.Image = Properties.Resources.golpe;
+                        pictureBox2.Update();
+                        pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
+                        pictureBox1.Left += 30;
+                        pictureBox1.Top -= 30;
+
+                        int reducir = rnd.Next(10, 30);
+                        vida_cpu = vida_cpu - reducir;
+
+                    }
+
 
                 }
             }
-           
-            if (ataque_fuego && turnojugado)
-            {   
-                if (mis_ataques[3] == "lanzallamas")
-                {
-                    pictureBox2.Image = Properties.Resources.charizard_frente;
-                    pictureBox2.Update();
-                    pictureBox2.Image = Properties.Resources.fuego;
-                    pictureBox2.Update();
-                    pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
-                    pictureBox1.Left += 30;
-                    pictureBox1.Top -= 30;
-
-                    int reducir = rnd.Next(10, 20);
-                    vida_cpu = vida_cpu - reducir;
-
-                }
-                if (mis_ataques[3] == "fuego")
-                {
-                    pictureBox2.Image = Properties.Resources.charizard_frente;
-                    pictureBox2.Update();
-                    pictureBox2.Image = Properties.Resources.aro_de_fuego;
-                    pictureBox2.Update();
-                    pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
-                    pictureBox1.Left += 30;
-                    pictureBox1.Top -= 30;
-
-                    int reducir = rnd.Next(10, 30);
-                    vida_cpu = vida_cpu - reducir;
-
-                }
-              
-            }
-
-            if (ataque_elect && turnojugado)
-            {
-                if (mis_ataques[1] == "trueno")
-                {
-                    pictureBox2.Image = Properties.Resources.charizard_frente;
-                    pictureBox2.Update();
-                    pictureBox2.Image = Properties.Resources.onda_electrica;
-                    pictureBox2.Update();
-                    pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
-                    pictureBox1.Left += 30;
-                    pictureBox1.Top -= 30;
-
-                    int reducir = rnd.Next(10, 20);
-                    vida_cpu = vida_cpu - reducir;
-
-                }
-                if (mis_ataques[1] == "rayo")
-                {
-                    pictureBox2.Image = Properties.Resources.charizard_frente;
-                    pictureBox2.Update();
-                    pictureBox2.Image = Properties.Resources.rayo;
-                    pictureBox2.Update();
-                    pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
-                    pictureBox1.Left += 30;
-                    pictureBox1.Top -= 30;
-
-                    int reducir = rnd.Next(10, 30);
-                    vida_cpu = vida_cpu - reducir;
-
-                }
-               
-               
-             }
-            if (ataque_planta)
-            {
-                if (mis_ataques[2] == "rafaga")
-                {
-                    pictureBox2.Image = Properties.Resources.charizard_frente;
-                    pictureBox2.Update();
-                    pictureBox2.Image = Properties.Resources.rafaga_planta;
-                    pictureBox2.Update();
-                    pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
-                    pictureBox1.Left += 30;
-                    pictureBox1.Top -= 30;
-
-                    int reducir = rnd.Next(10, 20);
-                    vida_cpu = vida_cpu - reducir;
-
-                }
-                if (mis_ataques[2] == "golpe")
-                {
-                    pictureBox2.Image = Properties.Resources.charizard_frente;
-                    pictureBox2.Update();
-                    pictureBox2.Image = Properties.Resources.golpe;
-                    pictureBox2.Update();
-                    pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
-                    pictureBox1.Left += 30;
-                    pictureBox1.Top -= 30;
-
-                    int reducir = rnd.Next(10, 30);
-                    vida_cpu = vida_cpu - reducir;
-
-                }
-
-                
-            }
+            
             //condicional que revisa si el jugador jugo su turno 
             if (turnojugado)
             {
@@ -494,6 +505,31 @@ namespace juego
             {
                 ataque_elect = true;
                 turnojugado = true;
+            }
+
+            if (e.KeyCode == Keys.A)
+            {
+                pictureBox1.Left = pictureBox1.Left - 45;
+                turnojugado = true;
+
+            }
+            if (e.KeyCode == Keys.W)
+            {
+                pictureBox1.Top = pictureBox1.Top - 45;
+                turnojugado = true;
+
+            }
+            if (e.KeyCode == Keys.S)
+            {
+                pictureBox1.Top = pictureBox1.Top + 45;
+                turnojugado = true;
+
+            }
+            if (e.KeyCode == Keys.D)
+            {
+                pictureBox1.Left = pictureBox1.Left + 45;
+                turnojugado = true;
+
             }
 
         }

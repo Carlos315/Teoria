@@ -83,6 +83,16 @@ namespace juego.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ajedrez {
+            get {
+                object obj = ResourceManager.GetObject("ajedrez", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aro_de_fuego {
             get {
                 object obj = ResourceManager.GetObject("aro_de_fuego", resourceCulture);

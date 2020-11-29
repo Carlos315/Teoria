@@ -64,6 +64,7 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="PokemonsJugador.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -154,6 +155,7 @@
     <None Include="Resources\descarga1.png" />
     <None Include="Resources\bosque pokemon.jpg" />
     <None Include="Resources\doble daño.jpg" />
+    <None Include="Resources\ajedrez.png" />
     <Content Include="Resources\movimientos-2.png %2810%29.png" />
     <None Include="Resources\movimientos-2.png %2810%291.png" />
     <None Include="Resources\pokemon.jpg" />
