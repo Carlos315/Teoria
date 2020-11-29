@@ -123,10 +123,10 @@ namespace juego
             Random rnd = new Random();//uso de la clase random
             if (movimiento && turnojugado)
             {
-                pictureBox1.Left = posicion_mia;
-                pictureBox1.Top = posicion_mia2;
+                pictureBox7 = pictureBox7;
             }
-            else 
+
+            else
             {
                 if (ataque_agua && turnojugado)//condiciona que evalua el tipo de atque usado y si el turno es del jugador
                 {
@@ -261,8 +261,24 @@ namespace juego
 
 
                 }
+
+                if (pictureBox7.Bounds.IntersectsWith(pictureBox5.Bounds))
+                {
+                    timer1.Stop();//se detienen ambos timer
+                    timer2.Stop();
+                    MessageBoxButtons buttons = MessageBoxButtons.OK;//declaracion de un buton de una ventana emergente
+                    DialogResult result;//varible usada para mostrar un mensaje en la ventana emergente
+
+                    // Displays the MessageBox.
+                    result = MessageBox.Show("Haz ganado felicidades", "", buttons);//impresion del mensaje de victoria
+                    if (result == System.Windows.Forms.DialogResult.OK)
+                    {
+
+                        this.Close();//una vez que se presiona el boton se cierra esta ventana
+
+                    }
+                }
             }
-            
             //condicional que revisa si el jugador jugo su turno 
             if (turnojugado)
             {
@@ -509,25 +525,25 @@ namespace juego
 
             if (e.KeyCode == Keys.A)
             {
-                pictureBox1.Left = pictureBox1.Left - 45;
+                pictureBox7.Left = pictureBox7.Left - 66;
                 turnojugado = true;
 
             }
             if (e.KeyCode == Keys.W)
             {
-                pictureBox1.Top = pictureBox1.Top - 45;
+                pictureBox7.Top = pictureBox7.Top - 66;
                 turnojugado = true;
 
             }
             if (e.KeyCode == Keys.S)
             {
-                pictureBox1.Top = pictureBox1.Top + 45;
+                pictureBox7.Top = pictureBox7.Top + 66;
                 turnojugado = true;
 
             }
             if (e.KeyCode == Keys.D)
             {
-                pictureBox1.Left = pictureBox1.Left + 45;
+                pictureBox7.Left = pictureBox7.Left + 66;
                 turnojugado = true;
 
             }

@@ -156,11 +156,16 @@
     <None Include="Resources\bosque pokemon.jpg" />
     <None Include="Resources\doble daño.jpg" />
     <None Include="Resources\ajedrez.png" />
+    <None Include="Resources\ball_blue.jpg" />
+    <None Include="Resources\ataques.png" />
+    <None Include="Resources\movimientos tablero.jpg" />
     <Content Include="Resources\movimientos-2.png %2810%29.png" />
     <None Include="Resources\movimientos-2.png %2810%291.png" />
     <None Include="Resources\pokemon.jpg" />
     <None Include="Resources\otro_rival.png" />
     <None Include="Resources\pasto_fondo.jpg" />
+    <None Include="Resources\red_tablero.png" />
+    <None Include="Resources\Poké-Ball_Red.png" />
     <Content Include="Resources\Pueblo_Primavera_HGSS.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -113,6 +113,26 @@ namespace juego.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ataques {
+            get {
+                object obj = ResourceManager.GetObject("ataques", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ball_blue {
+            get {
+                object obj = ResourceManager.GetObject("ball_blue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap batalla {
             get {
                 object obj = ResourceManager.GetObject("batalla", resourceCulture);
@@ -463,6 +483,16 @@ namespace juego.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap movimientos_tablero {
+            get {
+                object obj = ResourceManager.GetObject("movimientos tablero", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap onda_electrica {
             get {
                 object obj = ResourceManager.GetObject("onda_electrica", resourceCulture);
@@ -506,6 +536,16 @@ namespace juego.Properties {
         internal static System.Drawing.Bitmap pikachu_frente {
             get {
                 object obj = ResourceManager.GetObject("pikachu_frente", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Poké_Ball_Red {
+            get {
+                object obj = ResourceManager.GetObject("Poké-Ball_Red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
