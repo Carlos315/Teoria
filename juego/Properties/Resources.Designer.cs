@@ -483,6 +483,16 @@ namespace juego.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap movimientos_escenerio {
+            get {
+                object obj = ResourceManager.GetObject("movimientos escenerio", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap movimientos_tablero {
             get {
                 object obj = ResourceManager.GetObject("movimientos tablero", resourceCulture);

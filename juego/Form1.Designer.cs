@@ -63,6 +63,7 @@
             this.pictureBox28 = new System.Windows.Forms.PictureBox();
             this.pictureBox29 = new System.Windows.Forms.PictureBox();
             this.pictureBox30 = new System.Windows.Forms.PictureBox();
+            this.pictureBox31 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -93,6 +94,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -116,11 +118,12 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(273, 9);
+            this.label1.Location = new System.Drawing.Point(606, 5);
+            this.label1.MaximumSize = new System.Drawing.Size(280, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 29);
+            this.label1.Size = new System.Drawing.Size(144, 29);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Código";
+            this.label1.Text = "Movimiento";
             // 
             // label2
             // 
@@ -338,7 +341,6 @@
             this.pictureBox23.Size = new System.Drawing.Size(43, 637);
             this.pictureBox23.TabIndex = 26;
             this.pictureBox23.TabStop = false;
-            this.pictureBox23.Click += new System.EventHandler(this.pictureBox23_Click);
             // 
             // pictureBox24
             // 
@@ -379,7 +381,7 @@
             // pictureBox28
             // 
             this.pictureBox28.BackgroundImage = global::juego.Properties.Resources.doble_daño;
-            this.pictureBox28.Location = new System.Drawing.Point(323, 95);
+            this.pictureBox28.Location = new System.Drawing.Point(242, 464);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(21, 23);
             this.pictureBox28.TabIndex = 31;
@@ -397,11 +399,20 @@
             // pictureBox30
             // 
             this.pictureBox30.BackgroundImage = global::juego.Properties.Resources.sustitucion;
-            this.pictureBox30.Location = new System.Drawing.Point(66, 296);
+            this.pictureBox30.Location = new System.Drawing.Point(104, 296);
             this.pictureBox30.Name = "pictureBox30";
             this.pictureBox30.Size = new System.Drawing.Size(29, 29);
             this.pictureBox30.TabIndex = 33;
             this.pictureBox30.TabStop = false;
+            // 
+            // pictureBox31
+            // 
+            this.pictureBox31.Image = global::juego.Properties.Resources.movimientos_escenerio;
+            this.pictureBox31.Location = new System.Drawing.Point(628, 37);
+            this.pictureBox31.Name = "pictureBox31";
+            this.pictureBox31.Size = new System.Drawing.Size(100, 107);
+            this.pictureBox31.TabIndex = 34;
+            this.pictureBox31.TabStop = false;
             // 
             // Form1
             // 
@@ -410,6 +421,7 @@
             this.AutoSize = true;
             this.BackgroundImage = global::juego.Properties.Resources.bosque_pokemon;
             this.ClientSize = new System.Drawing.Size(784, 661);
+            this.Controls.Add(this.pictureBox31);
             this.Controls.Add(this.pictureBox30);
             this.Controls.Add(this.pictureBox29);
             this.Controls.Add(this.pictureBox28);
@@ -437,12 +449,12 @@
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximumSize = new System.Drawing.Size(800, 700);
             this.MinimumSize = new System.Drawing.Size(800, 700);
@@ -482,6 +494,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -523,6 +536,7 @@
         private System.Windows.Forms.PictureBox pictureBox28;
         private System.Windows.Forms.PictureBox pictureBox29;
         private System.Windows.Forms.PictureBox pictureBox30;
+        private System.Windows.Forms.PictureBox pictureBox31;
     }
 }
 

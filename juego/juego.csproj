@@ -159,6 +159,7 @@
     <None Include="Resources\ball_blue.jpg" />
     <None Include="Resources\ataques.png" />
     <None Include="Resources\movimientos tablero.jpg" />
+    <None Include="Resources\movimientos escenerio.png" />
     <Content Include="Resources\movimientos-2.png %2810%29.png" />
     <None Include="Resources\movimientos-2.png %2810%291.png" />
     <None Include="Resources\pokemon.jpg" />

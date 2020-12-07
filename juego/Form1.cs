@@ -227,11 +227,27 @@ namespace juego
                 timer1.Stop();//se detiene el timer de esta pantalla
 
             }
+            if (pictureBox2.Bounds.IntersectsWith(pictureBox28.Bounds))
+            {
+                pictureBox28.Visible= false;
+            }
+            if (pictureBox2.Bounds.IntersectsWith(pictureBox28.Bounds))
+            {
+                pictureBox28.Visible = false;
+            }
+            if(pictureBox2.Bounds.IntersectsWith(pictureBox29.Bounds))
+            {
+                pictureBox29.Visible = false;
+            }
+            if (pictureBox2.Bounds.IntersectsWith(pictureBox30.Bounds))
+            {
+                pictureBox30.Visible = false;
+            }
+
+
         }
 
-        private void pictureBox23_Click(object sender, EventArgs e)
-        {
+       
 
-        }
     }
 }

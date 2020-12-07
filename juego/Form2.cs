@@ -48,18 +48,56 @@ namespace juego
         }
 
 
-        String mi_pokemon;//funcion que indica el pokemon que tiene el jugador
-        String pokemon_cpu;//funcion que inidca el pokemon de la CPU
-
        //uso de sobrecarga de constructores
         public Form2()
         {   //inicializacion de los componentes de la ventana
+
             InitializeComponent();
         }
         public Form2(String pokemon_actual)
         {
-            mi_pokemon = pokemon_actual;//se recupera el nombre del pokemon traido desde la otra ventana
+            string mi_pokemon = pokemon_actual;//se recupera el nombre del pokemon traido desde la otra ventana
             InitializeComponent();//inicializacion de los componentes de la ventana
+            Random posicion = new Random();
+            int pic = posicion.Next(0, 9);
+            switch (pic)
+            {
+                case 1:
+                    pictureBox8.Left = 62;
+                    pictureBox7.Left = 62;
+                    break;
+                case 2:
+                    pictureBox8.Left = 95;
+                    pictureBox7.Left = 95;
+                    break;
+                case 3:
+                    pictureBox8.Left = 128;
+                    pictureBox7.Left = 128;
+                    break;
+                case 4:
+                    pictureBox8.Left = 161;
+                    pictureBox7.Left = 161;
+                    break;
+                case 5:
+                    pictureBox8.Left = 194;
+                    pictureBox7.Left = 194;
+                    break;
+                case 6:
+                    pictureBox8.Left = 227;
+                    pictureBox7.Left = 227;
+                    break;
+                case 7:
+                    pictureBox8.Left = 260;
+                    pictureBox7.Left = 260;
+                    break;
+                case 8:
+                    pictureBox8.Left = 293;
+                    pictureBox7.Left = 293;
+                    break;
+                default:
+                    Console.WriteLine("Default case");
+                    break;
+            }
 
         }
        //metodo que carga el formulario de la ventana
@@ -326,27 +364,28 @@ namespace juego
                
             }
 
-
+           
             if (mov == 0 && turnojugado )
             {
+                aleatorio = 1;
                 if (aleatorio == 1)
                 {
-                   if(aux_posicion_x-66 <  57)
+                   if(pictureBox8.Left - 66 <  62)
                    {
-
-                   }
+                        pictureBox8.Left = 62;
+                    }
                    else
                    {
                         pictureBox8.Left = pictureBox8.Left - 66;
-                        aux_posicion_x = aux_posicion_x - 66;
+                       
                    }
                 
                 }
                 if (aleatorio == 2)
                 {
-                    if (aux_posicion_y - 66 < 100)
+                    if (pictureBox8.Top < 100)
                     {
-
+                        pictureBox8.Top = 100;
                     }
                     else
                     {
@@ -356,7 +395,7 @@ namespace juego
                 }
                 if (aleatorio == 3)
                 {
-                    if (aux_posicion_y + 66 >334)
+                    if (pictureBox8.Top + 66 >334)
                     {
                         pictureBox8.Top = 334;
                     }
@@ -364,19 +403,19 @@ namespace juego
                     {
 
                         pictureBox8.Top = pictureBox8.Top + 66;
-                        aux_posicion_y = aux_posicion_y + 66;
+                        
                     }
                 }
                 if (aleatorio == 4)
                 {
-                    if (aux_posicion_x + 66 > 294)
+                    if (pictureBox8.Left + 66 > 294)
                     {
-
+                        pictureBox8.Left = 294;
                     }
                     else
                     {
                         pictureBox8.Left = pictureBox8.Left + 66;
-                        aux_posicion_x = aux_posicion_x + 66;
+                        
                     }
                 }
 
@@ -586,9 +625,16 @@ namespace juego
 
             if (e.KeyCode == Keys.A)
             {
-                pictureBox7.Left = pictureBox7.Left - 66;
+               
                 turnojugado = true;
-
+                if (pictureBox7.Left - 66 < 62)
+                {
+                    pictureBox7.Left = 62;
+                }
+                else
+                {
+                    pictureBox7.Left = pictureBox7.Left - 66;
+                }
             }
             if (e.KeyCode == Keys.W)
             {
@@ -607,13 +653,27 @@ namespace juego
             }
             if (e.KeyCode == Keys.S)
             {
-                pictureBox7.Top = pictureBox7.Top + 66;
+                if (pictureBox7.Top + 66 > 334)
+                {
+                    pictureBox7.Top = 100;
+                }
+                else
+                {
+                    pictureBox7.Top = pictureBox7.Top + 66;
+                }
                 turnojugado = true;
 
             }
             if (e.KeyCode == Keys.D)
             {
-                pictureBox7.Left = pictureBox7.Left + 66;
+                if (pictureBox7.Left + 66 > 293)
+                {
+                    pictureBox7.Left = 293;
+                }
+                else
+                {
+                    pictureBox7.Left = pictureBox7.Left + 66;
+                }
                 turnojugado = true;
 
             }
