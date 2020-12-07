@@ -273,7 +273,7 @@ namespace juego
                 pictureBox2.Top = posicion_cpu2;
                 pictureBox2.Image = Properties.Resources.charizard_frente;
 
-                label7.Text = "TURNO DEL CPU";
+                 label7.Text = "TURNO DEL CPU";
             }
             timer2.Start();//inicio del ataque del CPU
             if (vida_cpu <= 0)//condicional que evalua si el CPU puede seguir luchando si se cumple el CPU perdio
@@ -597,7 +597,11 @@ namespace juego
                 {
                     pictureBox7.Top = 100;
                 }
-                pictureBox7.Top = pictureBox7.Top - 66;
+                else
+                {
+                    pictureBox7.Top = pictureBox7.Top - 66;
+                }
+               
                 turnojugado = true;
 
             }
