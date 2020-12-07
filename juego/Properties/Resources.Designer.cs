@@ -253,6 +253,16 @@ namespace juego.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dragon {
+            get {
+                object obj = ResourceManager.GetObject("dragon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap electabuzz_espalda {
             get {
                 object obj = ResourceManager.GetObject("electabuzz_espalda", resourceCulture);
@@ -636,6 +646,26 @@ namespace juego.Properties {
         internal static System.Drawing.Bitmap textura {
             get {
                 object obj = ResourceManager.GetObject("textura", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tortuga_preview_rev_1 {
+            get {
+                object obj = ResourceManager.GetObject("tortuga_preview_rev_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tortuga_preview_rev_2 {
+            get {
+                object obj = ResourceManager.GetObject("tortuga_preview_rev_2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

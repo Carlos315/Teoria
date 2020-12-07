@@ -154,11 +154,11 @@ namespace juego
                 {
                     if (mis_ataques[0] == "hidrobomba")//se evalua si el ataque del jugador coincide con un elemento del arreglo de ataque 
                     {
-                        pictureBox2.Image = Properties.Resources.charizard_frente;//impresion del pokemon del CPU
+                        pictureBox2.Image = Properties.Resources.dragon;//impresion del pokemon del CPU
                         pictureBox2.Update();//actualizacion simulando la animacion
                         pictureBox2.Image = Properties.Resources.agua;//se usa el sprite correspondiente al ataque y se muestra
                         pictureBox2.Update();//actualizacion simulando la animacion
-                        pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;//se coloca el pokemon del rival del fondo para hacer simulacion de ser golpeado por el ataque
+                        pictureBox2.BackgroundImage = Properties.Resources.dragon;//se coloca el pokemon del rival del fondo para hacer simulacion de ser golpeado por el ataque
                         pictureBox1.Left += 30;//simulacion de acercamiento del pokemon del jugador
                         pictureBox1.Top -= 30;
 
@@ -170,11 +170,11 @@ namespace juego
                     }
                     if (mis_ataques[0] == "Burbuja" && turnojugado)
                     {
-                        pictureBox2.Image = Properties.Resources.charizard_frente;
+                        pictureBox2.Image = Properties.Resources.dragon;
                         pictureBox2.Update();
                         pictureBox2.Image = Properties.Resources.agua_Canon;
                         pictureBox2.Update();
-                        pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
+                        pictureBox2.BackgroundImage = Properties.Resources.dragon;
                         pictureBox1.Left += 30;
                         pictureBox1.Top -= 30;
 
@@ -188,11 +188,11 @@ namespace juego
                 {
                     if (mis_ataques[3] == "lanzallamas")
                     {
-                        pictureBox2.Image = Properties.Resources.charizard_frente;
+                        pictureBox2.Image = Properties.Resources.dragon;
                         pictureBox2.Update();
                         pictureBox2.Image = Properties.Resources.fuego;
                         pictureBox2.Update();
-                        pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
+                        pictureBox2.BackgroundImage = Properties.Resources.dragon;
                         pictureBox1.Left += 30;
                         pictureBox1.Top -= 30;
 
@@ -202,11 +202,11 @@ namespace juego
                     }
                     if (mis_ataques[3] == "fuego")
                     {
-                        pictureBox2.Image = Properties.Resources.charizard_frente;
+                        pictureBox2.Image = Properties.Resources.dragon;
                         pictureBox2.Update();
                         pictureBox2.Image = Properties.Resources.aro_de_fuego;
                         pictureBox2.Update();
-                        pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
+                        pictureBox2.BackgroundImage = Properties.Resources.dragon;
                         pictureBox1.Left += 30;
                         pictureBox1.Top -= 30;
 
@@ -221,11 +221,11 @@ namespace juego
                 {
                     if (mis_ataques[1] == "trueno")
                     {
-                        pictureBox2.Image = Properties.Resources.charizard_frente;
+                        pictureBox2.Image = Properties.Resources.dragon;
                         pictureBox2.Update();
                         pictureBox2.Image = Properties.Resources.onda_electrica;
                         pictureBox2.Update();
-                        pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
+                        pictureBox2.BackgroundImage = Properties.Resources.dragon;
                         pictureBox1.Left += 30;
                         pictureBox1.Top -= 30;
 
@@ -235,11 +235,11 @@ namespace juego
                     }
                     if (mis_ataques[1] == "rayo")
                     {
-                        pictureBox2.Image = Properties.Resources.charizard_frente;
+                        pictureBox2.Image = Properties.Resources.dragon;
                         pictureBox2.Update();
                         pictureBox2.Image = Properties.Resources.rayo;
                         pictureBox2.Update();
-                        pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
+                        pictureBox2.BackgroundImage = Properties.Resources.dragon;
                         pictureBox1.Left += 30;
                         pictureBox1.Top -= 30;
 
@@ -254,11 +254,11 @@ namespace juego
                 {
                     if (mis_ataques[2] == "rafaga")
                     {
-                        pictureBox2.Image = Properties.Resources.charizard_frente;
+                        pictureBox2.Image = Properties.Resources.dragon;
                         pictureBox2.Update();
                         pictureBox2.Image = Properties.Resources.rafaga_planta;
                         pictureBox2.Update();
-                        pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
+                        pictureBox2.BackgroundImage = Properties.Resources.dragon;
                         pictureBox1.Left += 30;
                         pictureBox1.Top -= 30;
 
@@ -268,11 +268,11 @@ namespace juego
                     }
                     if (mis_ataques[2] == "golpe")
                     {
-                        pictureBox2.Image = Properties.Resources.charizard_frente;
+                        pictureBox2.Image = Properties.Resources.dragon;
                         pictureBox2.Update();
                         pictureBox2.Image = Properties.Resources.golpe;
                         pictureBox2.Update();
-                        pictureBox2.BackgroundImage = Properties.Resources.charizard_frente;
+                        pictureBox2.BackgroundImage = Properties.Resources.dragon;
                         pictureBox1.Left += 30;
                         pictureBox1.Top -= 30;
 
@@ -309,7 +309,7 @@ namespace juego
                 pictureBox1.Top = posicion_mia2;
                 pictureBox2.Left = posicion_cpu;
                 pictureBox2.Top = posicion_cpu2;
-                pictureBox2.Image = Properties.Resources.charizard_frente;
+                pictureBox2.Image = Properties.Resources.dragon;
 
                  label7.Text = "TURNO DEL CPU";
             }
@@ -430,11 +430,11 @@ namespace juego
                     if (ataques_cpu[0] == "hidrobomba")
                     {
 
-                        pictureBox1.Image = Properties.Resources.blastoise;
+                        pictureBox1.Image = Properties.Resources.tortuga_preview_rev_2;
                         pictureBox1.Update();
                         pictureBox1.Image = Properties.Resources.agua;
                         pictureBox1.Update();
-                        pictureBox1.BackgroundImage = Properties.Resources.blastoise;
+                        pictureBox1.BackgroundImage = Properties.Resources.tortuga_preview_rev_2;
                         pictureBox2.Left -= 30;
                         pictureBox2.Top += 30;
 
@@ -445,11 +445,11 @@ namespace juego
                     if (ataques_cpu[0] == "Burbuja")
                     {
 
-                        pictureBox1.Image = Properties.Resources.blastoise;
+                        pictureBox1.Image = Properties.Resources.tortuga_preview_rev_2;
                         pictureBox1.Update();
                         pictureBox1.Image = Properties.Resources.agua_Canon;
                         pictureBox1.Update();
-                        pictureBox1.BackgroundImage = Properties.Resources.blastoise;
+                        pictureBox1.BackgroundImage = Properties.Resources.tortuga_preview_rev_2;
                         pictureBox2.Left -= 30;
                         pictureBox2.Top += 30;
 
@@ -467,11 +467,11 @@ namespace juego
                     if (ataques_cpu[3] == "lanzallamas")
                     {
 
-                        pictureBox1.Image = Properties.Resources.blastoise;
+                        pictureBox1.Image = Properties.Resources.tortuga_preview_rev_2;
                         pictureBox1.Update();
                         pictureBox1.Image = Properties.Resources.fuego;
                         pictureBox1.Update();
-                        pictureBox1.BackgroundImage = Properties.Resources.blastoise;
+                        pictureBox1.BackgroundImage = Properties.Resources.tortuga_preview_rev_2;
                         pictureBox2.Left -= 30;
                         pictureBox2.Top += 30;
 
@@ -482,11 +482,11 @@ namespace juego
                     if (ataques_cpu[3] == "fuego")
                     {
 
-                        pictureBox1.Image = Properties.Resources.blastoise;
+                        pictureBox1.Image = Properties.Resources.tortuga_preview_rev_2;
                         pictureBox1.Update();
                         pictureBox1.Image = Properties.Resources.aro_de_fuego;
                         pictureBox1.Update();
-                        pictureBox1.BackgroundImage = Properties.Resources.blastoise;
+                        pictureBox1.BackgroundImage = Properties.Resources.tortuga_preview_rev_2;
                         pictureBox2.Left -= 30;
                         pictureBox2.Top += 30;
 
@@ -503,11 +503,11 @@ namespace juego
                 {
                     if (ataques_cpu[1] == "trueno")
                     {
-                        pictureBox1.Image = Properties.Resources.blastoise;
+                        pictureBox1.Image = Properties.Resources.tortuga_preview_rev_2;
                         pictureBox1.Update();
                         pictureBox1.Image = Properties.Resources.onda_electrica;
                         pictureBox1.Update();
-                        pictureBox1.BackgroundImage = Properties.Resources.blastoise;
+                        pictureBox1.BackgroundImage = Properties.Resources.tortuga_preview_rev_2;
                         pictureBox2.Left -= 30;
                         pictureBox2.Top += 30;
 
@@ -518,11 +518,11 @@ namespace juego
                     if (ataques_cpu[1] == "rayo")
                     {
 
-                        pictureBox1.Image = Properties.Resources.blastoise;
+                        pictureBox1.Image = Properties.Resources.tortuga_preview_rev_2;
                         pictureBox1.Update();
                         pictureBox1.Image = Properties.Resources.rayo;
                         pictureBox1.Update();
-                        pictureBox1.BackgroundImage = Properties.Resources.blastoise;
+                        pictureBox1.BackgroundImage = Properties.Resources.tortuga_preview_rev_2;
                         pictureBox2.Left -= 30;
                         pictureBox2.Top += 30;
 
@@ -537,11 +537,11 @@ namespace juego
                 {
                     if (ataques_cpu[2] == "rafaga")
                     {
-                        pictureBox1.Image = Properties.Resources.blastoise;
+                        pictureBox1.Image = Properties.Resources.tortuga_preview_rev_2;
                         pictureBox1.Update();
                         pictureBox1.Image = Properties.Resources.rafaga_planta;
                         pictureBox1.Update();
-                        pictureBox1.BackgroundImage = Properties.Resources.blastoise;
+                        pictureBox1.BackgroundImage = Properties.Resources.tortuga_preview_rev_2;
                         pictureBox2.Left -= 30;
                         pictureBox2.Top += 30;
 
@@ -552,11 +552,11 @@ namespace juego
                     if (ataques_cpu[2] == "golpe")
                     {
 
-                        pictureBox1.Image = Properties.Resources.blastoise;
+                        pictureBox1.Image = Properties.Resources.tortuga_preview_rev_2;
                         pictureBox1.Update();
                         pictureBox1.Image = Properties.Resources.golpe;
                         pictureBox1.Update();
-                        pictureBox1.BackgroundImage = Properties.Resources.blastoise;
+                        pictureBox1.BackgroundImage = Properties.Resources.tortuga_preview_rev_2;
                         pictureBox2.Left -= 30;
                         pictureBox2.Top += 30;
 
@@ -574,9 +574,9 @@ namespace juego
                     pictureBox1.Top = posicion_mia2;
                     pictureBox2.Left = posicion_cpu;
                     pictureBox2.Top = posicion_cpu2;
-                    pictureBox2.Image = Properties.Resources.charizard_frente;
+                    pictureBox2.Image = Properties.Resources.dragon;
                 }
-                pictureBox1.Image = Properties.Resources.blastoise;
+                pictureBox1.Image = Properties.Resources.tortuga_preview_rev_2;
 
                 if (vida_jugador <= 0)//condicional que evalua la vida del pokemon del jugador si el condicional cumple se accede al codigo en el interior
                 {

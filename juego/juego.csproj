@@ -100,6 +100,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\tortuga_preview_rev_2.png" />
+    <None Include="Resources\tortuga_preview_rev_1.png" />
     <None Include="Resources\sustitucion.jpg" />
     <None Include="Resources\semilla del ermitaño.jpg" />
     <None Include="Resources\textura.jpg" />
@@ -160,6 +162,7 @@
     <None Include="Resources\ataques.png" />
     <None Include="Resources\movimientos tablero.jpg" />
     <None Include="Resources\movimientos escenerio.png" />
+    <None Include="Resources\dragon.png" />
     <Content Include="Resources\movimientos-2.png %2810%29.png" />
     <None Include="Resources\movimientos-2.png %2810%291.png" />
     <None Include="Resources\pokemon.jpg" />

@@ -67,21 +67,20 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::juego.Properties.Resources.blastoise;
-            this.pictureBox1.Image = global::juego.Properties.Resources.blastoise;
-            this.pictureBox1.Location = new System.Drawing.Point(386, 209);
+            this.pictureBox1.Image = global::juego.Properties.Resources.tortuga_preview_rev_2;
+            this.pictureBox1.Location = new System.Drawing.Point(409, 205);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(137, 105);
+            this.pictureBox1.Size = new System.Drawing.Size(137, 89);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::juego.Properties.Resources.charizard_frente;
+            this.pictureBox2.Image = global::juego.Properties.Resources.dragon;
             this.pictureBox2.Location = new System.Drawing.Point(560, 100);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(129, 104);
+            this.pictureBox2.Size = new System.Drawing.Size(157, 103);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             // 
@@ -162,7 +161,7 @@
             // pictureBox3
             // 
             this.pictureBox3.BackgroundImage = global::juego.Properties.Resources.game;
-            this.pictureBox3.Location = new System.Drawing.Point(386, 188);
+            this.pictureBox3.Location = new System.Drawing.Point(349, 170);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(323, 156);
             this.pictureBox3.TabIndex = 13;
